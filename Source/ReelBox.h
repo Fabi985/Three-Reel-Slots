@@ -18,7 +18,6 @@ class ReelBox {
         void setReelBoxID(int ID);
         void setReelBoxSymbol(Symbol symbol);
         void setReelBox(int ID, Symbol symbol);
-    
 };
 
 #endif

@@ -16,6 +16,7 @@ class Slot {
 
     public:
         Slot();
+        void SpinSlot();
 };
 
 #endif
