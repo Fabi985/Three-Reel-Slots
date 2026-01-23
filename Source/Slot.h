@@ -12,11 +12,20 @@ class Slot {
         int score_;
         int token_;
         int return_;
+
         std::list<Reel> ReelList; 
+        std::list<Symbol> SlotSymbolsList;
 
     public:
         Slot();
-        void SpinSlot();
+
+        std::list<Reel> getReelList();
+        std::list<Symbol> getSymbolsList();
+        
+        void addSymbol(Symbol symbol);
+        void spinSlot(std::list<Symbol> SlotSymbolsList);
+        void getScore(std::list<Reel> ReelList);
+        void slotOutput();
 };
 
 #endif

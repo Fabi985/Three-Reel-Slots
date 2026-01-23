@@ -23,7 +23,7 @@ class Symbol {
         void setSymbolName(std::string name);
         void setSymbolWeight(int weight);
         void setSymbolWorth(int worth);
-        void setSymbol(int ID, std::string name, int weight, int worth);
+        void setSymbol(Symbol symbol);
 };
 
 #endif

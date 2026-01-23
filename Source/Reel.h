@@ -8,20 +8,23 @@
 
 class Reel {
     private:
+        ReelBox box1;
+        ReelBox box2;
+        ReelBox box3;
+
         std::list<ReelBox> reelBoxesList;
-        std::list<Symbol> symbolsList;
 
     public:
         Reel();
-        Reel(std::list<ReelBox> reelBoxesList, std::list<Symbol> symbolsList);
+        Reel(std::list<ReelBox> reelBoxesList);
         
         std::list<ReelBox> getReelBoxList();
-        std::list<Symbol> getSymbolsList();
-
+        
         void addReelBox(ReelBox box);
-        void addSymbol(Symbol symbol);
 
         void rollReel(std::list<ReelBox> reelBoxesList);
+
+        void updateReelBox(ReelBox box);
 };
 
 #endif
