@@ -13,6 +13,10 @@ class Slot {
         int token_;
         int return_;
 
+        Reel reel1;
+        Reel reel2;
+        Reel reel3;
+
         std::list<Reel> ReelList; 
         std::list<Symbol> SlotSymbolsList;
 

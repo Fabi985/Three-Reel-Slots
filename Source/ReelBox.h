@@ -10,7 +10,7 @@ class ReelBox {
 
     public:
         ReelBox();
-        ReelBox(int ID, Symbol symbol);
+        ReelBox(int ID);
 
         int getReelBoxID();
         Symbol getReelSymbol();

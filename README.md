@@ -1,7 +1,19 @@
+# Compiler code
+*This is only for me incase i forget how to compile my own code*
+
+>Compile:
+```
+g++ Main.cpp Reel.cpp ReelBox.cpp Slot.cpp Symbol.cpp -o slots
+```
+
+>Run:
+```
+./slots
+```
+
 # Three-Reel-Slots
  Three reel slots in C++.
  This is mainly going to be used for me to explain my thought process and plan the project somewhat.
-
 
 # Programs design
 ![alt txt](/README_images/fuckass.drawio.png)

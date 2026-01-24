@@ -8,6 +8,7 @@
 
 class Reel {
     private:
+        int reelID_;
         ReelBox box1;
         ReelBox box2;
         ReelBox box3;
@@ -16,15 +17,19 @@ class Reel {
 
     public:
         Reel();
+        Reel(int ID);
         Reel(std::list<ReelBox> reelBoxesList);
         
         std::list<ReelBox> getReelBoxList();
+        int getReelID();
         
+        void setupReel();
+
         void addReelBox(ReelBox box);
 
         void rollReel(std::list<ReelBox> reelBoxesList);
 
-        void updateReelBox(ReelBox box);
+        void updateReelBox(ReelBox box, Symbol symbol);
 };
 
 #endif
