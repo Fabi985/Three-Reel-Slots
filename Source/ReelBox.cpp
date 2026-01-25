@@ -25,15 +25,18 @@ Symbol ReelBox::getReelSymbol() {
 
 
 // Set
-void ReelBox::setReelBoxID(int ID) {
+void ReelBox::setReelBoxID(int &ID) {
     reelBoxID_ = ID;
 }
 
-void ReelBox::setReelBoxSymbol(Symbol symbol) {
-    symbol_.setSymbol(symbol);
-}
-
-void ReelBox::setReelBox(int ID, Symbol symbol) {
-    reelBoxID_ = ID;
+void ReelBox::setReelBoxSymbol(Symbol &symbol) {
     symbol_ = symbol;
+}
+
+void ReelBox::setReelBox(int &ID, Symbol &symbol) {
+    reelBoxID_ = ID;
+    // symbol_.setSymbolID(symbol.getSymbolID());
+    // symbol_.setSymbolName(symbol.getSymbolName());
+    // symbol_.setSymbolWeight(symbol.getSymbolWeight());
+    // symbol_.setSymbolWorth(symbol.getSymbolWorth());
 }

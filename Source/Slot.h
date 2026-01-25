@@ -27,7 +27,7 @@ class Slot {
         std::list<Symbol> getSymbolsList();
         
         void addSymbol(Symbol symbol);
-        void spinSlot(std::list<Symbol> SlotSymbolsList);
+        void spinSlot();
         void getScore(std::list<Reel> ReelList);
         void slotOutput();
 };

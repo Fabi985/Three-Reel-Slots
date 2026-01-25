@@ -15,9 +15,9 @@ class ReelBox {
         int getReelBoxID();
         Symbol getReelSymbol();
 
-        void setReelBoxID(int ID);
-        void setReelBoxSymbol(Symbol symbol);
-        void setReelBox(int ID, Symbol symbol);
+        void setReelBoxID(int &ID);
+        void setReelBoxSymbol(Symbol &symbol);
+        void setReelBox(int &ID, Symbol &symbol);
 };
 
 #endif

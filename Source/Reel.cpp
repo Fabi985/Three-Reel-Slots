@@ -1,8 +1,10 @@
+#include "Slot.h"
 #include "Reel.h"
 #include "ReelBox.h"
 #include "Symbol.h"
 
 #include <iostream>
+#include <cstdlib>
 #include <string>
 
 // Constructor
@@ -17,7 +19,7 @@ Reel::Reel(int ID) {
 }
 
 // Get
-std::list<ReelBox> Reel::getReelBoxList() {
+std::list<ReelBox> &Reel::getReelBoxList() {
     return reelBoxesList;
 }
 
@@ -41,15 +43,29 @@ void Reel::setupReel() {
     addReelBox(box3);
 }
 
-void Reel::rollReel(std::list<ReelBox> reelBoxes) {
-    Symbol test;
+void Reel::rollReel(std::list<ReelBox> &reelBoxes) {
+    srand(time(0));
     std::cout << "\n";
+    std::cout << "Reel NO." << reelID_ << ": ";
+
+    Symbol Test1 = Symbol(1, "Lemon", 70, 3);
+    Symbol Test2 = Symbol(2, "Cherry", 50, 5);
+    Symbol Test3 = Symbol(3, "Bell", 15, 10);
+    Symbol Test4 = Symbol(4, "Seven", 5, 15);
+
     for (ReelBox RB : reelBoxes) {
-        std::cout << "RBid: " << RB.getReelBoxID() << "\t";
-        test = RB.getReelSymbol();
+        std::cout << "\nDEBUG>>>";
+        int randomNum = rand() % 101;
+        if (randomNum >= 70) {updateReelBox(RB, Test1);}
+        else if (randomNum < 70 && randomNum >= 50) {updateReelBox(RB, Test2);}
+        else if (randomNum < 50 && randomNum >= 15) {updateReelBox(RB, Test3);}
+        else if (randomNum < 15) {updateReelBox(RB, Test4);}
+
+        std::cout << "Box: " << RB.getReelBoxID() << RB.getReelSymbol().getSymbolName() << "\t";
+        std::cout << "\n";
     }
 }
 
-void Reel::updateReelBox(ReelBox box, Symbol symbol) {
+void Reel::updateReelBox(ReelBox &box, Symbol &symbol) {
     box.setReelBoxSymbol(symbol);
 }

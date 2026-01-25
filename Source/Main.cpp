@@ -6,7 +6,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello world!\n\n";
     Symbol lemon = Symbol(1, "Lemon", 70, 2);
     Symbol cherry = Symbol(2, "Cherry", 50, 4);
     Symbol bell = Symbol(3, "Bell", 15, 10);
@@ -19,12 +18,7 @@ int main() {
     slotMachine1.addSymbol(bell);
     slotMachine1.addSymbol(seven);
 
-    slotMachine1.spinSlot(slotMachine1.getSymbolsList());
-
-    std::cout << "\n\nSymbol list: \n";
-    for (Symbol s : slotMachine1.getSymbolsList()) {
-        std::cout << "Symbol name: " << s.getSymbolName() << "\n";  
-    }
+    slotMachine1.spinSlot();
 
     return 0;
 }

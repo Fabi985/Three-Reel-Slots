@@ -13,9 +13,9 @@ Slot::Slot() {
     token_ = 0;
     return_ = 0;
 
-    reel1 = Reel();
-    reel2 = Reel();
-    reel3 = Reel();
+    reel1 = Reel(1);
+    reel2 = Reel(2);
+    reel3 = Reel(3);
 
     ReelList.push_back(reel1);
     ReelList.push_back(reel2);
@@ -36,7 +36,7 @@ void Slot::addSymbol(Symbol Symbol) {
     SlotSymbolsList.push_back(Symbol);
 }
 
-void Slot::spinSlot(std::list<Symbol> symbolsList) {
+void Slot::spinSlot() {
     for (Reel r : ReelList) {
         r.rollReel(r.getReelBoxList());
     }
