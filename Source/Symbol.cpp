@@ -36,23 +36,23 @@ int Symbol::getSymbolWorth() {
 }
 
 // Set
-void Symbol::setSymbolID(int ID) {
+void Symbol::setSymbolID(int &ID) {
     symbolID_ = ID;
 }
 
-void Symbol::setSymbolName(std::string name) {
+void Symbol::setSymbolName(std::string &name) {
     symbolName_ = name;
 }
 
-void Symbol::setSymbolWeight(int weight) {
+void Symbol::setSymbolWeight(int &weight) {
     symbolWeight_ = weight;
 }
 
-void Symbol::setSymbolWorth(int worth) {
+void Symbol::setSymbolWorth(int &worth) {
     symbolWorth_ = worth;
 }
 
-void Symbol::setSymbol(Symbol symbol) {
+void Symbol::setSymbol(Symbol &symbol) {
     symbolID_ = symbol.symbolID_;
     symbolName_ = symbol.symbolName_;
     symbolWeight_ = symbol.symbolWeight_;

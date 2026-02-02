@@ -16,7 +16,7 @@ g++ Main.cpp Reel.cpp ReelBox.cpp Slot.cpp Symbol.cpp -o slots
  This is mainly going to be used for me to explain my thought process and plan the project somewhat.
 
 # Programs design
-![alt txt](/README_images/fuckass.drawio.png)
+![alt txt](/README_images/SlotMachineDiagram.drawio.png)
 
 
 * *Image no longer valid as i may have added/removed some variables*

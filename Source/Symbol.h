@@ -19,11 +19,11 @@ class Symbol {
         int getSymbolWeight(); 
         int getSymbolWorth();
 
-        void setSymbolID(int ID);
-        void setSymbolName(std::string name);
-        void setSymbolWeight(int weight);
-        void setSymbolWorth(int worth);
-        void setSymbol(Symbol symbol);
+        void setSymbolID(int &ID);
+        void setSymbolName(std::string &name);
+        void setSymbolWeight(int &weight);
+        void setSymbolWorth(int &worth);
+        void setSymbol(Symbol &symbol);
 };
 
 #endif
