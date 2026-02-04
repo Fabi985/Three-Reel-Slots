@@ -36,10 +36,15 @@ void Slot::addSymbol(Symbol Symbol) {
     SlotSymbolsList.push_back(Symbol);
 }
 
+<<<<<<< Updated upstream
 void Slot::spinSlot() {
     srand(time(0));
     for (Reel r : ReelList) {
         srand(time(0));
         r.rollReel(r.getReelBoxList());
     }
+=======
+void Slot::spinSlot(std::list<Symbol> symbolsList) {
+    //TODO: rework this
+>>>>>>> Stashed changes
 }

@@ -43,6 +43,7 @@ void Reel::setupReel() {
     addReelBox(box3);
 }
 
+<<<<<<< Updated upstream
 void Reel::rollReel(std::list<ReelBox> &reelBoxes) {
     srand(time(0));
     std::cout << "\n";
@@ -64,6 +65,10 @@ void Reel::rollReel(std::list<ReelBox> &reelBoxes) {
         std::cout << "Box: " << RB.getReelBoxID() << RB.getReelSymbol().getSymbolName() << "\t";
         std::cout << "\n";
     }
+=======
+void Reel::rollReel(std::list<ReelBox> reelBoxes) {
+    // TODO: rework this
+>>>>>>> Stashed changes
 }
 
 void Reel::updateReelBox(ReelBox &box, Symbol &symbol) {
