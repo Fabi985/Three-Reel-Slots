@@ -18,16 +18,6 @@ int main() {
     slotMachine1.addSymbol(bell);
     slotMachine1.addSymbol(seven);
 
-<<<<<<< Updated upstream
     slotMachine1.spinSlot();
-=======
-    slotMachine1.spinSlot(slotMachine1.getSymbolsList());
-
-    // std::cout << "\n\nSymbol list: \n";
-    // for (Symbol s : slotMachine1.getSymbolsList()) {
-    //     std::cout << "Symbol name: " << s.getSymbolName() << "\n";  
-    // }
->>>>>>> Stashed changes
-
     return 0;
 }
