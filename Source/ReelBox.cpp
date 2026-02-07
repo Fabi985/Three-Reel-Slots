@@ -31,7 +31,6 @@ void ReelBox::setReelBoxID(int ID) {
 
 // Find out how to do pointer work properly
 void ReelBox::setReelBoxSymbol(Symbol symbol) {
-    std::cout << "Debug;";
     rbSymbol_.setSymbol(symbol);
 }
 

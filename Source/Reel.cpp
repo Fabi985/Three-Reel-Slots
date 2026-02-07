@@ -44,15 +44,14 @@ void Reel::setupReel() {
 }
 
 void Reel::rollReel(std::list<ReelBox> reelBoxes) {
-    for (ReelBox rb : reelBoxes) {
+    for (ReelBox& rb : reelBoxes) {
         int randomNum = rand() % 101;
-        std::cout << "\nrandomNum:" << randomNum;
         boxPercentages(randomNum, rb);
-        std::cout << "\n\nname:" << rb.getReelSymbol().getSymbolName() << "\n";
     }
 }
 
 void Reel::boxPercentages(int randomNum, ReelBox rb) {
+    // No need for these just remembered
     Symbol lemon = Symbol(1, "Lemon", 50, 3);
     Symbol cherry = Symbol(2, "Cherry", 25, 5);
     Symbol seven = Symbol(3, "Seven", 5, 7);
