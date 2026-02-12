@@ -3,28 +3,35 @@
 #ifndef SLOT_H
 #define SLOT_H
 
-private:
-    int score;
-    int tokens;
+#include <vector>
+#include "Reel.h"
+#include "Symbol.h"
 
-    Reel r1;
-    Reel r2;
-    Reel r3;
+class Slot {
+    private:
+        int score;
+        int tokens;
 
-    List<Reel> reelList;
-    List<Symbol> slotSymbolsList;
+        std::vector<Reel> reels;
+        std::vector<Symbol> possibleSymbols;
 
-public:
-    Slot();
-    Slot(tokens);
+    public:
+        Slot();
+        Slot(int initialTokens);
 
-    void setTokens(int amount);
-    void incrementTokens(int amount);
-    void setSymbols(Symbol symbol);
-    void spinSlot(list<Reel> reelList, list<Symbol> slotSymbolsList);
+        void setTokens(int amount);
+        void addTokens(int amount);
 
-    int getScore();
-    int getTokens();
+        void spinSlot();
+
+        int getScore() const;
+        int getTokens() const;
+};
 
 #endif
+```
+
+# Reel.h
+```C++
+
 ```
