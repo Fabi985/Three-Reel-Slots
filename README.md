@@ -1,4 +1,6 @@
 ***Currently nuked my entire project***
 
-# Three-Reel-Slots
- Three reel slots in C++.
+# Multi-Reel-Slots
+ Multi reel slots in C++.
+
+
