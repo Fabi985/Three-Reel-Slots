@@ -13,9 +13,11 @@ class Symbol {
 
         Symbol(std::string symbolName, int symbolValue);
 
+        // Getters
         std::string getName() const;
         int getValue() const;
 
+        // Allows for better comparisons
         bool operator==(const Symbol& other) const;
 };
 #endif
